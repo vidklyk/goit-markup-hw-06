@@ -1,0 +1,74 @@
+body {
+	font-family: "Roboto", "Raleway", sans-serif;
+	color: #2E2F42;
+	background: white;
+}
+
+.contacts a {
+	color: #434455;
+	text-decoration: none;
+	font-style: normal;
+	font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.32px;
+}
+.contacts a:hover {
+	color: #404BBF
+}
+h1 {
+	color: white;
+	font-size: 56px;
+		line-height: 1;
+		letter-spacing: 1.12px;
+}
+.first-screen {
+	background-color: #2E2F42;
+	width: 1440px;
+	height: 600px;
+}
+.first-scr-btn {
+	color: white;
+	background-color: #4D5AE5;
+	cursor: pointer;
+}
+.first-scr-btn:hover {
+	background: #404BBF;
+}
+.logo {
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+}
+.main-menu a {
+	  color: #2E2F42;
+	  font-size: 16px;
+		font-weight: 500;
+		line-height: 24px;
+		letter-spacing: 1;
+		text-decoration: none;
+}
+.main-menu a:hover {
+	color: #404BBF;
+}
+h2 {
+	font-size: 36px;
+	line-height: 0.333;
+}
+h3 {
+	font-size: 20px;
+	line-height: 0.333;
+	letter-spacing: 0.4px;
+}
+p {
+	font-size: 16px;
+	line-height: 0.333;
+	letter-spacing: 0.32px;
+}
+.team {
+	background-color: #F4F4FD;
+}
+
+.portfolio {}
+footer {
+}
