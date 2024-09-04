@@ -4,6 +4,14 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  max-width: 100hv;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 156px;
+  margin-right: 156px;
+}
+
 /*LOGO SECTION*/
 .logo {
   color: #4d5ae5;
