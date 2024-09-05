@@ -18,6 +18,10 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
 ul,
 ol {
   margin-top: 0;
@@ -58,6 +62,7 @@ section {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .container .main-menu {
@@ -234,13 +239,14 @@ section {
   gap: 24px;
 }
 
+.team-card img {
+  display: block;
+}
+
 .team-card {
-  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px;
-  padding-bottom: 32px;
   border-radius: 0px 0px 4px 4px;
   background: var(--WHITE, #fff);
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -263,18 +269,23 @@ section {
   margin-bottom: 72px;
 }
 .team-main-text {
+  padding-top: 32px;
+  padding-bottom: 8px;
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.4px;
+  line-height: 1.5rem; /* 120% */
+  letter-spacing: 0.025rem;
 }
 
 .team-content-text {
+  padding-bottom: 32px;
   color: #434455;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: 0.02rem;
 }
 
 /*PORTFOLIO SECTION*/
