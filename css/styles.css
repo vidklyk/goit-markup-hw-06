@@ -42,10 +42,7 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 156px;
-  margin-right: 156px;
-  max-width: 1440px;
-  justify-content: center;
+  max-width: 1158px;
   margin: 0 auto;
 }
 
@@ -192,7 +189,7 @@ section {
 
 .benefits-block ul {
   display: flex;
-  padding: 120px;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -207,6 +204,7 @@ section {
   text-align: center;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  padding-bottom: 72px;
 }
 .benefits-main-text {
   color: #2e2f42;
