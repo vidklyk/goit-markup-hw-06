@@ -96,7 +96,7 @@ section {
   color: #2e2f42;
 }
 
-a .menu-link {
+.menu-link {
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
@@ -126,9 +126,12 @@ a .menu-link {
 .head-address {
   font-style: normal;
 }
-.address-list {
+.contacts-list {
   display: flex;
-  gap: 40px;
+}
+
+.header-list:not(:last-child) {
+  margin-right: 40px;
 }
 
 .contacts-link {
