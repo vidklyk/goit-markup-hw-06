@@ -107,8 +107,6 @@ section {
 
 .main-menu {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
   gap: 40px;
 }
 
@@ -118,6 +116,11 @@ section {
 
 .main-menu a:focus {
   color: #404bbf;
+}
+
+.main-menu-list {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .head-address {
