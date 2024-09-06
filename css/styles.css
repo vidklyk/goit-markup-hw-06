@@ -60,6 +60,7 @@ section {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  padding: 24px 0;
 }
 
 .page-header .container {
@@ -120,8 +121,6 @@ section {
 }
 
 .main-menu-list {
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .head-address {
