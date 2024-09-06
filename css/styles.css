@@ -62,12 +62,15 @@ section {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.header-block {
+.page-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.header-block {
 }
 
 .container .main-menu {
@@ -217,7 +220,7 @@ section {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .benefits-content-text {
