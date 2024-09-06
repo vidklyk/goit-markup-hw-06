@@ -96,7 +96,7 @@ section {
   color: #2e2f42;
 }
 
-.menu-link {
+a .menu-link {
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
@@ -107,6 +107,8 @@ section {
 
 .main-menu {
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
   gap: 40px;
 }
 
@@ -119,8 +121,6 @@ section {
 }
 
 .main-menu-list {
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .head-address {
