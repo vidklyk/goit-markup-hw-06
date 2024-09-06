@@ -44,6 +44,7 @@ body {
 }
 
 .container {
+  box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
   max-width: 1158px;
@@ -188,8 +189,6 @@ section {
 .benefits {
   background-color: #ffffff;
 }
-.benefits-block {
-}
 
 .benefits-main-list {
   display: flex;
@@ -198,9 +197,6 @@ section {
 
 .benefits-list {
   width: calc((100% - 72px) / 4);
-}
-
-.benefits-card {
 }
 
 .visually-hidden {
@@ -299,9 +295,6 @@ section {
   justify-content: center;
 }
 
-.portfolio-list {
-}
-
 .portfolio-title-text {
   color: #2e2f42;
   font-weight: 700;
@@ -311,9 +304,6 @@ section {
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 72px;
-}
-
-.portfolio-img {
 }
 
 .card-text {
@@ -353,9 +343,6 @@ section {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
-}
-
-.footer-content {
 }
 
 .logo-footer {
