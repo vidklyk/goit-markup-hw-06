@@ -465,7 +465,7 @@ section {
   padding-bottom: 100px;
 }
 
-.content-footer {
+.container-footer {
   display: flex;
   align-items: baseline;
 }
