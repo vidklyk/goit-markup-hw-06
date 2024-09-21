@@ -453,7 +453,7 @@ section {
   letter-spacing: 0.32px;
 }
 
-.overlay:hover .text-overlay {
+.portfolio-list:hover .text-overlay {
   transform: translateY(0);
   overflow: visible;
 }
@@ -530,7 +530,7 @@ section {
   background-color: #31d0aa;
 }
 .footer-icon {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   fill: #f4f4fd;
 }
