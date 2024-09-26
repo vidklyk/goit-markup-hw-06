@@ -536,29 +536,38 @@ section {
 }
 /************************* MODAL WINDOW **********************/
 
+.rewiew-form-fields-wrapper {
+  margin-bottom: 8px;
+}
+
 input {
   border-radius: 4px;
   border: 1px solid;
-  padding-left: 40px;
+  padding-left: 38px;
 }
 
 .user-input {
-  width: 360px;
+  width: 100%;
   height: 40px;
   border-color: rgba(46, 47, 66, 0.4);
+  color: #2e2f42;
+  font-size: 12px;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 0.48px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-input:hover,
 .user-input:focus {
+  outline: none;
   border-color: rgba(77, 90, 229, 1);
 }
 
 .input-text {
+  max-width: 360px;
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
-
-  /* Body Medium */
-  font-family: Roboto;
+  margin-bottom: 16px;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -567,9 +576,21 @@ input {
 }
 
 .user-form {
-  position: relative;
+}
+
+.rewiew-form-fields-label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
+  color: var(--LIGHT-SLATE, #8e8f99);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 0.48px;
+}
+
+.rewiew-form-input-wrapper {
+  position: relative;
 }
 
 .user-icon {
@@ -577,6 +598,13 @@ input {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-input:focus,
+.user-input:hover + .user-icon {
+  fill: #4d5ae5;
 }
 
 .backdrop {
@@ -609,7 +637,8 @@ input {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  min-height: 584px;
+  height: 80%;
+  max-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
@@ -626,6 +655,71 @@ input {
 .modal-cancel {
   display: flex;
   justify-content: end;
+  margin-bottom: 24px;
+}
+
+.rewiew-form-comment {
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+  background-color: transparent;
+  padding: 8px 16px;
+  border-color: rgba(46, 47, 66, 0.4);
+  color: #2e2f42;
+  font-size: 12px;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 0.48px;
+  resize: none;
+}
+
+.rewiew-form-comment:hover,
+.rewiew-form-comment:focus {
+  border-color: #404bbf;
+}
+
+.rewiew-form-comment::placeholder {
+  color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+  /* Small Text */
+  font-size: 12px;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 0.48px;
+}
+
+.rewiew-form-castom-checkbox {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid #2e2f4266;
+}
+
+.rewiew-checkbox-form:checked
+  + .rewiew-form-checkbox-label
+  > .rewiew-form-castom-checkbox {
+  background-color: #404bbf;
+  fill: #f4f4fd;
+}
+
+.rewiew-form-checkbox-label {
+  display: flex;
+  justify-content: space-between;
+  color: var(--LIGHT-SLATE, #8e8f99);
+  font-size: 12px;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 0.48px;
+  fill: none;
+}
+
+.rewiew-form-policy-link {
+  color: var(--IRIS, #4d5ae5);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  text-decoration-line: underline;
 }
 
 .modal-botton {
