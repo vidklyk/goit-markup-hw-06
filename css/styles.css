@@ -636,13 +636,16 @@ input {
   outline: transparent;
 }
 
-.user-input:focus {
+.user-input:focus + .user-icon {
+  fill: #4d5ae5;
   outline: none;
   border-color: rgba(77, 90, 229, 1);
 }
 
 .user-input:hover + .user-icon {
   fill: #4d5ae5;
+  outline: none;
+  border-color: rgba(77, 90, 229, 1);
 }
 
 .input-text {
