@@ -640,7 +640,7 @@ input {
   outline: none;
 }
 
-.user-input:focus + .user-icon use {
+.user-input:focus + .user-icon {
   fill: #4d5ae5; /* Зміна кольору іконки при фокусі на input */
 }
 
@@ -648,7 +648,7 @@ input {
   border-color: #4d5ae5; /* Зміна кольору рамки при наведенні */
 }
 
-.user-input:hover + .user-icon use {
+.user-input:hover + .user-icon {
   fill: #4d5ae5; /* Зміна кольору іконки при наведенні на input */
 }
 
