@@ -636,8 +636,8 @@ input {
   outline: transparent;
 }
 
-.user-input:hover,
-.user-input:focus {
+.user-input:focus,
+.user-input:hover + .user-icon {
   fill: #4d5ae5;
   outline: none;
   border-color: rgba(77, 90, 229, 1);
@@ -677,11 +677,6 @@ input {
   transform: translateY(-50%);
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.user-input:focus,
-.user-input:hover + .user-icon {
-  fill: #4d5ae5;
 }
 
 .backdrop {
@@ -779,9 +774,10 @@ input {
   height: 16px;
   border-radius: 2px;
   border: 1px solid #2e2f4266;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
 }
 
 .rewiew-checkbox-form:checked
