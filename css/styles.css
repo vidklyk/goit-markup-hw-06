@@ -635,16 +635,21 @@ input {
   outline: transparent;
 }
 
-.user-input:focus + .user-icon {
-  fill: #4d5ae5;
+.user-input:focus {
+  border-color: #4d5ae5; /* Зміна кольору рамки при фокусі */
   outline: none;
-  border-color: #4d5ae5;
 }
 
-.user-input:hover + .user-icon {
-  fill: #4d5ae5;
-  outline: none;
-  border-color: #4d5ae5;
+.user-input:focus + .user-icon use {
+  fill: #4d5ae5; /* Зміна кольору іконки при фокусі на input */
+}
+
+.user-input:hover {
+  border-color: #4d5ae5; /* Зміна кольору рамки при наведенні */
+}
+
+.user-input:hover + .user-icon use {
+  fill: #4d5ae5; /* Зміна кольору іконки при наведенні на input */
 }
 
 .input-text {
