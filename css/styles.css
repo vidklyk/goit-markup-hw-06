@@ -634,14 +634,14 @@ input {
 
 .input-text {
   max-width: 360px;
-  color: var(--NAVY-BLUE, #2e2f42);
+  color: #2e2f42;
   text-align: center;
   margin-bottom: 16px;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
 }
 
 .rewiew-form-fields-label {
@@ -698,20 +698,18 @@ input {
 }
 
 .modal {
+  padding: 72px 24px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  height: 80%;
-  max-height: 584px;
+  min-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
-  padding: 24px;
 }
 
 .backdrop:not(.is-open) .modal {
@@ -721,7 +719,6 @@ input {
 .modal-cancel {
   display: flex;
   justify-content: end;
-  margin-bottom: 24px;
 }
 
 .rewiew-form-comment {
@@ -798,20 +795,28 @@ input {
 }
 
 .modal-botton {
+  cursor: pointer;
+  position: absolute;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding: 0;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   background-color: #e7e9fc;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .modal-botton:hover,
 .modal-botton:focus {
   background-color: #404bbf;
+  border: none;
   fill: #ffffff;
 }
 
