@@ -19,7 +19,7 @@
   <body>
     <!--HEADER-->
     <header class="page-header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="nav-menu">
           <a class="logo" href="./index.html"
             >Web<span class="dark-side-logo">Studio</span></a
@@ -56,17 +56,87 @@
           </svg>
         </button>
       </div>
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="menu-close-btn" width="8" height="8">
+              <use href="./images/icons.svg#icon-cancel"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li class="menu-list">
+                <a class="menu-list-contact current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="menu-list">
+                <a class="menu-list-contact" href="">Portfolio</a>
+              </li>
+              <li class="menu-list">
+                <a class="menu-list-contact" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="mobile-contacts-list">
+              <li class="mobile-contacts">
+                <a class="mobile-contact-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-contacts">
+                <a class="mobile-contact-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mobile-icons-wrapper">
+            <ul class="mobile-menu-list-icons">
+              <li class="mobile-menu-item">
+                <a href="#" class="mobile-menu-link">
+                  <svg class="mobile-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="#" class="mobile-menu-link">
+                  <svg class="mobile-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="#" class="mobile-menu-link">
+                  <svg class="mobile-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="#" class="mobile-menu-link">
+                  <svg class="mobile-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <!--FIRST SCR SECTION-->
-      <section class="first-scr hidden">
-        <div class="container">
+      <section class="first-scr">
+        <div class="container first-scr-wrapper">
           <h1 class="main-title-text">Effective Solutions for Your Business</h1>
           <button class="first-scr-btn" type="button">Order Service</button>
         </div>
       </section>
       <!--OUR BENEFITS SECTION-->
-      <section class="benefits hidden">
+      <section class="benefits">
         <div class="container">
           <h2 class="visually-hidden">Our Benefits</h2>
           <ul class="benefits-main-list">
@@ -122,7 +192,7 @@
         </div>
       </section>
       <!--OUR TEAM SECTION-->
-      <section class="team hidden">
+      <section class="team">
         <div class="container">
           <h2 class="team-title-text">Our Team</h2>
           <ul class="team-main-list">
